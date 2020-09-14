@@ -1,0 +1,171 @@
+
+.nobootstrap { min-width: unset; padding: unset;}
+.bootstrap .page-head>.wrapper { display: none; }
+.bootstrap .page-head {height: 10px;}
+
+.frank {
+    height: auto;
+}
+
+.frank .container-header {
+    margin-top: -105px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 4fr 0.3fr 0.3fr;
+    background-color: white;
+}
+
+.frank .container-header > div {align-self: center}
+.frank .container-header > div > a {text-decoration: none; color: #e07047; }
+.frank .container-header .frank-logo { font-size: 20px; font-weight: bold; }
+
+.frank .frank-shipping{font-weight: bold; }
+.frank .frank-returns{font-weight: bold; }
+.frank .frank-chart{justify-self: center; }
+.frank .frank-settings{justify-self: center; }
+
+.frank .settings-boxes {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    background-color: #dee2e8;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "box1 box2"
+    "box3 ."
+    "box4 ."
+    "box5 ."
+    ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.frank .settings-boxes > div { background-color: white; border-radius: 9px; padding: 20px; }
+
+.frank .settings-boxes .contact-details-box { grid-area: box1 }
+.frank .settings-boxes .menu-box { grid-area: box2 }
+.frank .settings-boxes .email-address-box { grid-area: box3 }
+.frank .settings-boxes .change-password-box { grid-area: box4 }
+.frank .settings-boxes .delete-account-box { grid-area: box5 }
+
+
+.frank .settings-boxes .menu-box { display: grid; grid-template-rows: repeat(3, 1fr);}
+
+.contact-details-box {
+    padding: 30px;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "one . . ."
+    "two three four ."
+    "five six seven eight"
+    ;
+    column-gap: 10px;
+    /*row-gap: 10px;*/
+    background-color: white;
+}
+
+.contact-details-box > div { align-self: center; }
+.contact-details-box > input > input { border-radius: 9px; }
+
+.contact-details-box .contact-detail-heading { grid-area: one; }
+.contact-details-box .contact-person-label { grid-area: two; }
+.contact-details-box .phone-label { grid-area: three; }
+.contact-details-box .language-label { grid-area: four; }
+.contact-details-box .contact-person-text { grid-area: five; }
+.contact-details-box .phone-text { grid-area: six; }
+.contact-details-box .language-text { grid-area: seven; }
+.contact-details-box .all-text-save { grid-area: eight; justify-self: center; }
+
+.contact-details-box .contact-detail-heading > p { color: #e07047; font-size: 12px; font-weight: bold; }
+.contact-details-box .contact-person-label > label { color: #e07047; font-weight: bold; }
+.contact-details-box .phone-label > label { color: #e07047; font-weight: bold; }
+.contact-details-box .language-label > label { color: #e07047; font-weight: bold; }
+
+.contact-details-box .contact-person-text > input { border-radius: 9px; background-color: white; }
+.contact-details-box .phone-text > input { border-radius: 9px; background-color: white; }
+.contact-details-box .language-text > input { border-radius: 9px; background-color: white; }
+
+.contact-details-box .all-text-save > button {
+    border-radius: 25px;
+    width: 200px; height: 30px;
+    background-color: white;
+    border: 2px solid #e07047;
+    color: #e07047;
+    font-weight: bold;
+}
+
+.email-address-box {
+    padding: 30px;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "box-1 . . . ."
+    "box-2 box-3 box-4 box-5 ."
+    "box-6 box-7 . . ."
+    "box-8 box-9 box-10 . ."
+    ;
+    column-gap: 10px;
+    /*row-gap: 10px;*/
+    background-color: white;
+}
+
+.email-address-heading { grid-area: box-1; }
+.email-table { grid-area: box-2; }
+.role-table { grid-area: box-3; }
+.company-table { grid-area: box-4; }
+.status-table { grid-area: box-5; }
+.add-new-email-address-label { grid-area: box-6; }
+.add-new-role-label { grid-area: box-7; }
+.add-new-email-address-text { grid-area: box-8; }
+.add-new-role-text { grid-area: box-9; }
+.add-button { grid-area: box-10; }
+
+.change-password-box {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "abc1 . . ."
+    "abc2 abc3 abc4 ."
+    "abc5 abc6 abc7 abc8"
+;
+    column-gap: 10px;
+}
+
+.change-password-heading { grid-area: abc1; }
+.current-password-label { grid-area: abc2; }
+.new-password-label { grid-area: abc3; }
+.confirm-password-label { grid-area: abc4; }
+.current-password-text { grid-area: abc5; }
+.new-password-text { grid-area: abc6; }
+.confirm-password-text { grid-area: abc7; }
+.save-button { grid-area: abc8; }
+
+.delete-account-box {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-areas:
+    "xyz1 ."
+    "xyz2 ."
+    "xyz3 xyz4"
+;
+    column-gap: 10px;
+    background-color: white;
+}
+
+.delete-account-heading { grid-area: xyz1; }
+.delete-info { grid-area: xyz2; }
+.delete-note { grid-area: xyz3; }
+.delete-account-button { grid-area: xyz4; align-self: end; justify-self: center;}

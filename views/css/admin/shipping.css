@@ -1,0 +1,809 @@
+body {
+   background-color: #dee3e8;
+}
+.bootstrap .page-head {
+    display: none;
+}
+.bootstrap a {color: unset !important;}
+
+/*Container Header section start*/
+.bootstrap .container-header {
+    margin-top: -114px;
+    background-color: white;
+    width: 1140px;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: -15px;
+}
+
+.bootstrap .container-header .shipping-link {
+    text-decoration: none;
+    color: #a7a7a7!important;
+    float: left;
+    padding: 27px 35px 0 70px;
+    font-size: 15px
+}
+
+.bootstrap .container-header .shipping-link.active{color: #e07047 !important;}
+.bootstrap .container-header .shipping-link:hover { color: #e07047 !important; }
+
+.bootstrap .container-header .returns-link {
+    text-decoration: none;
+    color: #a7a7a7!important;
+    float: left;
+    padding-top: 27px;
+    font-size: 15px;
+}
+
+.bootstrap .container-header .returns-link.active{color: #e07047 !important;}
+
+.bootstrap .container-header .returns-link:hover {color: #e07047 !important;}
+/*Container Header section end*/
+
+/*Tab Container section start*/
+
+/*Tab Container section end*/
+
+.tab-container {
+    background-color: #dee3e8;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -10px;
+    padding-top: 30px;
+    height: 850px;
+}
+
+.tab-container .btn-search {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-left: 20px;
+    float: left;
+    height: 31px;
+    margin-right: -1px;
+    border-right: none;
+    border-bottom: 2px solid #e07047;
+    border-left: 2px solid #e07047;
+    border-top: 2px solid #e07047;
+    background-color: whitesmoke;
+}
+
+#material-icon {
+    font-size: 20px!important;
+    padding: 4px;
+    color: #e07047;
+}
+
+.tab-container {
+    display: none;
+}
+
+.tab-container-new-shipment-toggle {
+    display: block;
+}
+
+.tab-container .input-search {
+    display: inline-block!important;
+    border-bottom-right-radius: 25px!important;
+    border-top-right-radius: 25px!important;
+    width: 220px!important;
+    border-left: none!important;
+    border-bottom: 2px solid #e07047!important;
+    border-right: 2px solid #e07047!important;
+    border-top: 2px solid #e07047!important;
+    /*text-align: center;*/
+    color: #e07047!important;
+}
+
+.tab-container .input-search::placeholder {color: #e07047 !important; opacity: 1; padding-left: 15px }
+
+.tab-container .btn-new-shipment {
+    display: inline-block!important;
+    float: right;
+    border-radius: 25px;
+    border: 2px solid #e07047;
+    width: 170px;
+    height: 45px;
+    color: #e07047;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tab-container .upload-file {
+    text-decoration: none!important;
+    float: right;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 10px;
+    color: #e07047!important;
+    font-weight: bold;
+}
+
+.tab-container .upload-icon {
+    float: right;
+    margin-top: 12px;
+    margin-left: 30px;
+    color: #e07047!important;
+}
+
+.tab-container .tabs {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tab-container .tabs .buttonContainer button {
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #c6cbd1;
+    color: #474645;
+    border-radius: 12px 12px 0 0;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main-tab {
+    display: none;
+}
+
+.main-tab-active {
+    display: block;
+}
+
+.tabPanelTable {
+    width: 97%;
+    table-layout: fixed;
+}
+
+.tabPanelTable thead tr {
+    height: 40px;
+    padding-left: 30px!important;
+    background-color: #e07047;
+    color: whitesmoke;
+
+}
+
+.tabPanelTable thead tr th:last-child {
+    border-radius: 0 12px 0 0;
+}
+
+.tabPanelTable thead tr th {
+    padding-left: 40px;
+}
+
+.tabPanelTable tbody tr td {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c6cbd1;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+
+
+.tabPanelTable tbody tr:nth-child(even)
+{ color: #e07047; }
+
+.tab-container .tabs .tabPanel {}
+.tab-container .tabs .btn-support {
+    float: right;
+    margin-right: 35px;
+    margin-top: 35px;
+    width: 140px;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid #e07047;
+    background-color: #e07047;
+    color: whitesmoke;
+}
+
+/* new section*/
+
+#content.bootstrap .wizard {
+     background-color: unset;
+     border: unset;
+}
+
+.bootstrap .wizard {
+    background-color: unset;
+    padding: unset;
+}
+
+
+
+.wizard {
+    list-style: none;
+    overflow: hidden;
+    font-size: 16px;
+}
+.wizard li {
+    padding-right: 15px;
+    /*width: 100px;*/
+    float: left;
+}
+.wizard li a {
+    width: 230px;
+    height: 65px;
+    color: white;
+    text-decoration: none!important;
+    padding: 15px 0 10px 65px;
+    /*background: #e07047;*/
+    background: whitesmoke;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.wizard li a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid whitesmoke;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.wizard li a::before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid whitesmoke;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 2px;
+    left: 100%;
+    z-index: 1;
+}
+
+.wizard li:first-child a {
+    margin-left: 45px;
+    padding-left: 55px;
+}
+
+.wizard li a:hover {
+    background: #e07047;
+    color: white!important;
+}
+.wizard li a:hover:after {
+    border-left-color: #e07047;
+}
+
+.column {
+    float: left;
+    width: 20%;
+}
+.bootstrap img {
+    height: unset;
+    width: unset;
+}
+.commodities_image img {
+    height: 230px;
+    margin-top: 20px;
+    margin-left: 45px;
+    border-radius: 12px 12px 12px 12px;
+}
+.commodities_name {
+    padding: 10px 10px 10px 10px;
+    width: 230px;
+    /*margin-top: 20px;*/
+    margin-left: 45px;
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+.commodities_name .tracking_number {
+    padding: 10px 10px 10px 10px;
+    background-color: #f3cab7;
+    border-radius: 12px 12px 12px 12px;
+}
+.column-map {
+    float: right;
+    width: 70%;
+    margin: 22px 15px 0 0;
+}
+#detail-page-map {
+    width: 700px;
+    height: 230px;
+    background-color: #0e90d2;
+}
+
+.blow-map-col .delivery-information {
+    width: 150px;
+    float: left;
+}
+
+.blow-map-col .delivery-information p {
+    padding: 10px 10px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.blow-map-col .delivery-information a {
+    color: #e07047 !important;
+}
+
+.blow-map-col .not-home {
+    width: 135px;
+    float: left;
+}
+
+.blow-map-col .not-home p {
+    padding: 10px 10px 0 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.blow-map-col .not-home a {
+    color: #e07047 !important;
+}
+
+.new-shipment-page {
+    display: none;
+}
+
+.tab-container-new-shipment-toggle {
+    display: block;
+}
+
+.new-shipment-page .new-shipment-box {
+    width: 800px;
+    height: 870px;
+    background-color: white;
+    margin: 50px 10px 10px 380px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.contact-detail {
+    display: none;
+}
+.contact-detail-toggle {
+    display: block;
+}
+
+/*account------------------------------------------------------------------------------------------------------------------------------------*/
+.col-1-account {
+    display: none;
+}
+
+.col-1-active {
+    display: block;
+}
+.col-1-account {
+    width: 900px;
+    float: left;
+}
+
+.col-1-account p:first-child {
+    color: #e07047;
+    padding: 20px 0 0 20px;
+    font-weight: bold;
+}
+
+.col-1-account .contact-details-box {
+    width: 830px;
+    height: 130px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 25px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .contact-details-box input {
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #9d9d9d;
+    color: #9d9d9d;
+}
+
+.col-1-account .contact-details-box label {
+    color: #e07047;
+    font-weight: bold;
+}
+
+.col-1-account .contact-details-box .btn-contact-save {
+    margin-left: 50px;
+    width: 170px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .email-address-box {
+    width: 830px;
+    height: auto;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .email-address-box label {
+    color: #e07047;
+    font-weight: bold;
+}
+
+.col-1-account .email-address-box input {
+    border: unset;
+    margin: 0 10px 20px 15px;
+    background-color: white;
+}
+
+.col-1-account .email-address-box .btn-resend-verification {
+    width: 200px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .email-address-box .btn-add {
+    width: 100px;
+    height: 30px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-left: 23px;
+}
+
+.col-1-account .password-box {
+    width: 830px;
+    height: 130px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .delete-account-box {
+    width: 830px;
+    height: 220px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .delete-account-box form div .btn-delete-account{
+    width: 225px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: #e07047;
+    border: 2px solid #e07047;
+    background-color: white;
+    font-weight: bold;
+}
+
+.col-1-account .password-box {
+    width: 830px;
+    height: 130px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 25px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-account .password-box input {
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #9d9d9d;
+    color: #9d9d9d;
+}
+
+.col-1-account .password-box label {
+    color: #e07047;
+    font-weight: bold;
+}
+
+.col-1-account .password-box .btn-contact-save {
+    margin-left: 50px;
+    width: 170px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 12px 12px 12px 12px;
+}
+
+/*account closed ----------------------------------------------------------------------------------------------------------------------*/
+/*Upload CSV*/
+.upload-box {
+    display: none;
+}
+
+.upload-container {
+    display: block;
+}
+
+.upload-box {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    margin: 50px 10px 10px 445px;
+    border-radius: 12px 12px 12px 12px;
+}
+/*Upload CSV close */
+/*Invoice -------------------------------------------------------------------------------------------------------------------------------*/
+
+.col-1-invoice {
+    display: none;
+}
+
+.col-1-active {
+    display: block;
+}
+
+.col-1-invoice {
+    width: 900px;
+    float: left;
+}
+
+
+.col-1-invoice .billing-information {
+    width: 830px;
+    height: 125px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 25px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-invoice .billing-information .credit-card {
+    width: 785px;
+    height: 35px;
+    margin-left: 18px;
+    border: 1px solid #9d9d9d;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.col-1-invoice .billing-information .credit-card .remove-credit-card-btn{
+    width: 145px;
+    float: left;
+    margin: 6px 10px 6px 175px;
+    border-radius: 25px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+}
+
+.col-1-invoice .billing-information .credit-card .change-credit-card-btn {
+    width: 145px;
+    float: left;
+    margin: 6px 10px 6px 10px;
+    border-radius: 25px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+}
+
+.col-1-invoice .invoices {
+    width: 830px;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 25px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-invoice .invoices .invoices-table{
+    margin-left: 30px;
+}
+
+.col-1-invoice .invoices .invoices-table .invoices-tbody tr td:first-child{
+    padding-left: 0;
+}
+
+.col-1-invoice .invoices .invoices-table .invoices-tbody tr td{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #9d9d9d;
+    font-weight: bold;
+}
+
+/*Invoice closed ----------------------------------------------------------------------------------------------------------------------*/
+
+/*Warehouse -------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.col-1-warehouse {
+    display: none;
+}
+
+.col-1-active {
+    display: block;
+}
+
+.col-1-warehouse {
+    width: 900px;
+    float: left;
+}
+
+
+.col-1-warehouse .warehouse {
+    width: 830px;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 25px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-1-warehouse .warehouse .add-new-warehouse-input {
+    margin-left: 17px;
+    width: 350px;
+    height: 20px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #9d9d9d;
+}
+
+.col-1-warehouse .warehouse .add-new-warehouse-btn {
+    border-radius: 25px;
+    border: 2px solid #e07047;
+    color: #e07047;
+    background-color: white;
+    padding: 3px 13px 3px 13px;
+    margin-left: 10px;
+}
+
+.col-1-warehouse .warehouse .warehouse-table{
+    margin-left: 30px;
+}
+
+.col-1-warehouse .warehouse .warehouse-table .warehouse-tbody tr td:first-child{
+    padding-left: 0;
+}
+
+.col-1-warehouse .warehouse .warehouse-table .warehouse-tbody tr td{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #9d9d9d;
+    font-weight: bold;
+}
+
+/*Warehouse close -------------------------------------------------------------------------------------------------------------------------------*/
+
+.col-2 {
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+}
+
+.col-2 .account-invoice-warehouse-box {
+    margin-left: 50px;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.col-2 .account-invoice-warehouse-box ul li{
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.col-2 .account-invoice-warehouse-box ul li a{
+    text-decoration: none;
+    color: #9d9d9d;
+}
+
+.col-2 .account-invoice-warehouse-box ul li .select {
+    color: #e07047;
+}
+
+.col-2 .account-invoice-warehouse-box ul li a:hover{
+    color: #e07047;
+}
+
+/*Upload Start*/
+
+/*Upload End*/
+
+/*map mosal -------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 350px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+.pac-container{
+    z-index: 9999;
+}
+.modal-body{
+    height: 400px;
+}

@@ -1,0 +1,64 @@
+
+body { background-color: #dee2e8; }
+.nobootstrap { min-width: unset; padding: unset;}
+.bootstrap .page-head>.wrapper { display: none; }
+.bootstrap .page-head {height: 10px;}
+
+.frank {
+    height: auto;
+}
+
+.frank .container-header {
+    margin-top: -105px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 4fr 0.3fr 0.3fr;
+    background-color: white;
+}
+
+.frank .container-header > div {align-self: center}
+.frank .container-header > div > a {text-decoration: none; color: #e07047; }
+.frank .container-header .frank-logo { font-size: 20px; font-weight: bold; }
+
+.frank .frank-shipping{ font-weight: bold; }
+.frank .frank-returns{ font-weight: bold; }
+.frank .frank-chart{ justify-self: center; }
+.frank .frank-settings{ justify-self: center; }
+
+.ctr {
+    margin-top: 40px;
+    height: auto;
+    width: 70%;
+    border-radius: 12px;
+    background-color: white;
+    padding: 30px !important;
+}
+
+
+input { border-radius: 9px!important; background-color: white!important; border: 1px solid #d0d0d0!important; }
+p { color: #e07047; font-weight: bold; }
+.create-new-shipment-btn {
+    width: 200px; height: 40px; border-radius: 25px!important; border: 2px solid #e07047!important; background-color: white; color: #e07047; font-weight: bold;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: #efefef;
+    min-width: 30px;
+    text-align: center;
+    border-radius: 0 9px 9px 0;
+}
+
+.input-field {
+    border-radius: 9px 0 0 9px!important;
+    padding: 10px;
+    outline: none;
+}
