@@ -1,0 +1,296 @@
+
+.nobootstrap { min-width: unset; padding: unset;}
+.bootstrap .page-head>.wrapper { display: none; }
+.bootstrap .page-head {height: 10px;}
+body {
+    background-color: #dee2e8;
+}
+
+.bootstrap .row {padding-left: 15px;}
+.frank {
+    height: auto;
+}
+
+.frank .container-header {
+    margin-top: -105px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 4fr 0.3fr 0.3fr;
+    background-color: white;
+}
+
+.frank .container-header > div {align-self: center}
+.frank .container-header > div > a {text-decoration: none; color: #e07047; }
+/*.frank .container-header > div > a {text-decoration: none; color: #9c9c9c; }*/
+.frank .container-header .frank-logo { font-size: 20px; font-weight: bold; }
+
+.frank .frank-shipping{font-weight: bold; }
+.frank .frank-returns{font-weight: bold; }
+.frank .frank-chart{justify-self: center; }
+.frank .frank-settings{justify-self: center; }
+
+/*Account ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.ctr-1 {
+    display: none;
+}
+
+.ctr-active {
+    display: block;
+}
+
+
+.container-account label{
+    font-size: 12px;
+    color: #e07047;
+}
+
+/*Upload logo*/
+.container-upload-logo {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.upload-image-btn {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+}
+
+/*Contact detail*/
+.container-contact-detail {
+    border-radius: 15px;
+}
+
+
+.container-contact-detail input {
+    border-radius: 12px!important;
+}
+
+.contact-detail-btn {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+}
+
+/*Contact detail end*/
+
+/*Email address*/
+.container-email-address {
+    border-radius: 15px;
+}
+
+
+.container-email-address input {
+    border-radius: 12px!important;
+}
+
+.email-address-resend-verification {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+}
+
+
+.email-address-add {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+}
+/*Email address end*/
+
+/*Change password*/
+.container-change-password {
+    border-radius: 15px;
+}
+
+
+.container-change-password input {
+    border-radius: 12px!important;
+}
+
+.contact-change-password {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+}
+/*Change password end*/
+
+/*Delete account*/
+.container-delete-account {
+    border-radius: 15px;
+}
+.delete-account-btn {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+    margin-top: 65px;
+}
+/*Delete account end*/
+
+/*Account end -------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Invoice----------------------------------------------------------------------------------------------------------------------------------------*/
+.ctr-2 {
+    display: none;
+}
+
+.ctr-active {
+    display: block;
+}
+
+.container-billing-information {
+    border-radius: 15px;
+}
+
+.container-invoice {
+    border-radius: 15px;
+}
+/*Invoice end----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Warehouse----------------------------------------------------------------------------------------------------------------------------------------*/
+.ctr-3 {
+    display: none;
+}
+
+.ctr-active {
+    display: block;
+}
+
+.container-warehouse {
+    border-radius: 15px;
+}
+
+.container-fluid label {
+    color: #e07047;
+    font-size: 12px;
+}
+
+.container-fluid input {
+    border-radius: 12px!important;
+}
+
+.container-fluid .add-new-warehouse-btn {
+    color: #e07047!important;
+    font-weight: bold!important;
+    width: 150px!important;
+    border-radius: 25px!important;
+    border: 2px solid #e07047!important;
+}
+
+/*Warehouse end----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Menu*/
+.setting-menu {
+    border-radius: 15px!important;
+}
+.setting-menu a {
+    text-decoration: none!important;
+    color: #9c9c9c;
+    font-size: 14px;
+}
+.setting-menu a:hover {
+    color: #e07047;
+}
+/*menu end*/
+
+/*map mosal -------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 350px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+.pac-container{
+    z-index: 9999;
+}
+.modal-body{
+    height: 400px;
+}

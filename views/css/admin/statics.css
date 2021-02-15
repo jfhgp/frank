@@ -1,0 +1,57 @@
+
+.nobootstrap { min-width: unset; padding: unset;}
+.bootstrap .page-head>.wrapper { display: none; }
+.bootstrap .page-head {height: 10px;}
+body {
+    background-color: #dee2e8;
+}
+
+.bootstrap .row {padding-left: 15px;}
+.frank {
+    height: auto;
+}
+
+.frank .container-header {
+    margin-top: -105px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 4fr 0.3fr 0.3fr;
+    background-color: white;
+}
+
+.frank .container-header > div {align-self: center}
+.frank .container-header > div > a {text-decoration: none; color: #e07047; }
+/*.frank .container-header > div > a {text-decoration: none; color: #9c9c9c; }*/
+.frank .container-header .frank-logo { font-size: 20px; font-weight: bold; }
+
+.frank .frank-shipping{font-weight: bold; }
+.frank .frank-returns{font-weight: bold; }
+.frank .frank-chart{justify-self: center; }
+.frank .frank-settings{justify-self: center; }
+
+.box-1-2-3 {
+    background-color: white;
+    height: 100px;
+    border-radius: 12px;
+    padding-top: 30px;
+}
+
+.box-1-2-3 p {
+    color: #e07047;;
+}
+
+.single-box {
+    padding: 20px 20px 20px 20px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    /*background-color: red !important;*/
+}
+
+.anchor-class{
+    width: 100% !important;
+    display: contents !important;
+}
