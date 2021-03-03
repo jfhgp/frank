@@ -27,7 +27,7 @@ class FrankOrderConfirmationController
 
 
             $orderDetail = $this->getOrderDetail($order->id);
-
+//            echo '<pre>'; print_r($orderDetail); die();
             $twelve_digit = '';
             for($i = 0; $i < 12; $i++) { $twelve_digit .= mt_rand(1, 9); }
 
@@ -36,6 +36,7 @@ class FrankOrderConfirmationController
 
             $addArr = explode(',', $addressArray['address2']);
 
+            $prodDetail = [];
             $totalWeight = 0;
             $totalLength = 0;
             $totalWidth = 0;
@@ -47,6 +48,14 @@ class FrankOrderConfirmationController
                 $totalLength += $orderDetail[$i]['length'];
                 $totalWidth += $orderDetail[$i]['width'];
                 $totalHeight += $orderDetail[$i]['height'];
+
+                $prodDetail[$i]['item'] = $orderDetail[$i]['name'];
+                $prodDetail[$i]['quantity'] = (int)$orderDetail[$i]['quantity'];
+                $prodDetail[$i]['size'] = [
+                    (float)$orderDetail[$i]['width'], (float)$orderDetail[$i]['length'], (float)$orderDetail[$i]['height'], (float)$orderDetail[$i]['weight']
+                ];
+                $prodDetail[$i]['service'] = strtolower($carrierName[0]['carrier_name']);
+                $prodDetail[$i]['store'] = Configuration::get('FRANK_ID');
 
             }
 
@@ -88,6 +97,7 @@ class FrankOrderConfirmationController
                             'country' => pSQL($addressArray['country'])
                         ],
                     'commodities' => $commodities,
+                    'items' => $prodDetail,
 
                     'pickupDate' => $order->date_add,
                     'contact' =>
@@ -101,7 +111,7 @@ class FrankOrderConfirmationController
                             'countryCode' => $this->countryCode(pSQL($addressArray['country'])),
                         ],
 
-                    'deliveryType' => $carrierName[0]['carrier_name'],
+                    'deliveryType' => strtolower($carrierName[0]['carrier_name']),
                     'totalWeight' => sprintf("%.2f",$totalWeight),
                     'totalWidth' => sprintf("%.2f",$totalWidth),
                     'totalHeight' => sprintf("%.2f",$totalHeight),
@@ -113,6 +123,7 @@ class FrankOrderConfirmationController
                 ];
 //            echo '<pre>'; print_r($result); die();
             $res = $this->frank_api->doCurlRequest('orders/addEcommerceOrder', $result, Configuration::get('FRANK_TOKEN'));
+//            echo '<pre>'; print_r($res); die();
     }
 
     public function countryCode($countryName)

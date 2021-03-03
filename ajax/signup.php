@@ -49,7 +49,7 @@ if (strlen($_POST['password']) < 8) {
 }
 
 if (strlen($_POST['mobile_number']) < 6) {
-    echo json_encode(array('error' => 'Passwords must be 6 characters'));
+    echo json_encode(array('error' => 'Phone Number must be 6 characters'));
     exit;
 }
 
