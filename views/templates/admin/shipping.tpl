@@ -56,7 +56,7 @@
                             </thead>
                             <tbody id="search-pending">
                             {foreach $api_franks as $api_frank}
-                                {if $api_frank['status'] === 'pending'}
+                                {if $api_frank['status'] === 'pending' && $api_frank['isReturnOrder'] === false}
                                     <tr>
                                         <td class="col-sm-2">{$api_frank['orderNumber']}</td>
                                         <td class="col-sm-2">{$api_frank['contact']['name']}</td>
@@ -88,7 +88,7 @@
                             </thead>
                             <tbody id="search-pending">
                             {foreach $api_franks as $api_frank}
-                                {if $api_frank['status'] === 'accepted' || $api_frank['status'] === 'picked'}
+                                {if $api_frank['status'] === 'accepted' || $api_frank['status'] === 'picked'  && $api_frank['isReturnOrder'] === false}
                                     <tr>
                                         <td class="col-sm-2">{$api_frank['orderNumber']}</td>
                                         <td class="col-sm-2">{$api_frank['contact']['name']}</td>
@@ -120,7 +120,7 @@
                             </thead>
                             <tbody id="search-pending">
                             {foreach $api_franks as $api_frank}
-                                {if $api_frank['status'] === 'delivered'}
+                                {if $api_frank['status'] === 'delivered' && $api_frank['isReturnOrder'] === false}
                                     <tr>
                                         <td class="col-sm-2">{$api_frank['orderNumber']}</td>
                                         <td class="col-sm-2">{$api_frank['contact']['name']}</td>
@@ -154,7 +154,7 @@
                             {foreach $api_franks as $api_frank}
                                 {if $api_frank['status'] === 'cancelledbystore' ||
                                 $api_frank['status'] === 'cancelledbytransporter' ||
-                                $api_frank['status'] === 'cancelledbyadmin'}
+                                $api_frank['status'] === 'cancelledbyadmin' && $api_frank['isReturnOrder'] === false}
                                     <tr>
                                         <td class="col-sm-2">{$api_frank['orderNumber']}</td>
                                         <td class="col-sm-2">{$api_frank['contact']['name']}</td>

@@ -35,11 +35,11 @@ class FrankGetOrderShippingCostController
     {
         $shipping_cost = false;
         if ($id_carrier == Configuration::get('FRANK_CLASSIC') && isset($delivery_service['Classic']))
-            $shipping_cost = (int)$delivery_service['Classic'];
+            $shipping_cost = (float)$delivery_service['Classic'];
         if ($id_carrier == Configuration::get('FRANK_FLEX') && isset($delivery_service['Flex']))
-            $shipping_cost = (int)$delivery_service['Flex'];
+            $shipping_cost = (float)$delivery_service['Flex'];
         if ($id_carrier == Configuration::get('FRANK_GREEN') && isset($delivery_service['Green']))
-            $shipping_cost = (int)$delivery_service['Green'];
+            $shipping_cost = (float)$delivery_service['Green'];
         return $shipping_cost;
     }
 
@@ -78,7 +78,7 @@ class FrankGetOrderShippingCostController
             $prodDetail[$i]['item'] = $prodArr[$i]['name'];
             $prodDetail[$i]['quantity'] = $prodArr[$i]['cart_quantity'];
             $prodDetail[$i]['size'] = [
-                (float)$prodArr[$i]['width'], (float)$prodArr[$i]['height'], (float)$prodArr[$i]['depth'], (float)$prodArr[$i]['weight']
+                (float)$prodArr[$i]['width'], (float)$prodArr[$i]['height'], (float)$prodArr[$i]['length'], (float)$prodArr[$i]['weight']
             ];
         }
 

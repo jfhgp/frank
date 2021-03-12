@@ -101,8 +101,6 @@ class AdminFrankShippingController extends ModuleAdminController
                     'csv' => $readFile
                 );
                 $res = $this->frank_api->doCurlRequest('orders/createBulkShipment', $params, Configuration::get('FRANK_TOKEN'));
-//                $res = $this->frank_api->doCurlRequest('orders/create-shipments', $params, Configuration::get('FRANK_TOKEN')); // testing
-//                print_r($res); die();
             }
         }
     }

@@ -8,26 +8,25 @@ $(document).ready(function () {
         e.preventDefault();
         $form = $(this);
         $.ajax({
-            url: '../modules/frank/ajax/postAjax.php',
+            url: '../modules/frank/ajax/createNewShipment.php',
             method: 'POST',
             data: $form.serialize(),
             success: function(response) {
                 response = JSON.parse(response);
-                console.log(response.status);
                 if (response.status === 200) {
                     $(".new_shipment_form")[0].reset();
                     e.stopPropagation();
                     return $.growl.notice({
                         title: "",
                         size: "large",
-                        message: "New Shipment added successfully!"
+                        message: response.success
                     });
                 } else {
                     e.stopPropagation();
                     return $.growl.error({
                         title: "",
                         size: "large",
-                        message: "Some thing went wrong"
+                        message: response.error
                     });
                 }
             },

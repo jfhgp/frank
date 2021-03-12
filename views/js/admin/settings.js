@@ -1,4 +1,3 @@
-alert('abc');
 $(document).ready(function () {
 
     loadContact();

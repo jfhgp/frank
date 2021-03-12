@@ -27,14 +27,14 @@
         </div>
         <br>
         <form method="post" class="new_shipment_form">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="" style="color: #e07047; ">Order number</label>
-                        <input type="text" name="orderNumber">
-                    </div>
-                </div>
-            </div>
+{*            <div class="form-group">*}
+{*                <div class="row">*}
+{*                    <div class="col-sm-4">*}
+{*                        <label for="" style="color: #e07047; ">Order number</label>*}
+{*                        <input type="text" name="orderNumber">*}
+{*                    </div>*}
+{*                </div>*}
+{*            </div>*}
             <div class="form-group">
                 <div class="row">
                 <div class="col-sm-4">
@@ -80,9 +80,9 @@
 
                 </div>
                 <div class="col-sm-3">
-                    <label for="" style="color: #9d9d9d;">Depth</label>
+                    <label for="" style="color: #9d9d9d;">Length</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" name="depth" style="border-radius: 12px 0 0 12px!important;">
+                        <input type="number" class="form-control" name="length" style="border-radius: 12px 0 0 12px!important;">
                         <span class="input-group-addon" style="border-radius: 0 12px 12px 0!important;">cm</span>
                     </div>
                 </div>
