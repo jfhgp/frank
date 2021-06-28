@@ -1,9 +1,9 @@
 <?php
 
-require_once ('../../config/config.inc.php');
-require_once ('../../init.php');
-require_once ('frank.php');
-require_once ('api/FrankApi.php');
+require_once('../../config/config.inc.php');
+require_once('../../init.php');
+require_once('frank.php');
+require_once('api/FrankApi.php');
 
 $frank_api = null;
 

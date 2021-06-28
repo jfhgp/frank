@@ -1,9 +1,9 @@
 <?php
 
-require_once ('../../config/config.inc.php');
-require_once ('../../init.php');
-require_once ('frank.php');
-require_once ('api/FrankApi.php');
+require_once('../../config/config.inc.php');
+require_once('../../init.php');
+require_once('frank.php');
+require_once('api/FrankApi.php');
 
 //$frank_api = null;
 
@@ -51,6 +51,7 @@ if (
         $res = json_decode($res, true);
         if ($res['status'] === 200) {
             echo '{"status": 300}';
+            exit;
         }
     } else {
         $data = array(
@@ -75,11 +76,20 @@ if (
 
         $res = $frank_api->doCurlRequest("https://p-post.herokuapp.com/api/v1/stores/signup", $data);
         echo $res;
+        exit;
 //
 //        $res = json_decode($res, true);
 //        Configuration::updateValue('FRANK_TOKEN', $res['data']['token']);
 //        Configuration::updateValue('FRANK_ID', $res['data']['_id']);
     }
+}
+
+if (isset($_POST['countryName']) && $_POST['countryName']) {
+    $countryName = $_POST['countryName'];
+    $countryCode = new Frank();
+    $countryCodeName = $countryCode->countryCode($countryName);
+    echo $countryCodeName;
+    exit;
 }
 
 //print_r($form_values);
